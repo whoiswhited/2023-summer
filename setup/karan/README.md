@@ -12,7 +12,7 @@ After the download, extract the zip file with the cited passoword "**hackthebox*
 
 Now, after opening the unzipped folder `web_lovetok/` you may find out the following files and folders.
 
-![Available files and folders.](/assets/all-creds.png)
+![Available files and folders.](./assets/all-creds.png)
 
 Here, 
 ```
@@ -33,11 +33,11 @@ docker run --name=lovetok --rm -p1337:80 -it lovetok
     `docker run --name lovetok --rm -p1337:80 -it lovetok` Run a new Docker container named "lovetok" based on the "lovetok" image, exposing it on port 1337 of the host machine
 
 2. `challenge/` folder is the source code for the Website that will be provided for us to pentest.
-![websource](/assets/web-source.png)
+![websource](./assets/web-source.png)
 
 3. `config/` directory has all the config file for the PHP-FPM, Nginx, and Supervisord components of the LoveTok web application.
     
-    ![Files](/assets/conf-details.png)
+    ![Files](./assets/conf-details.png)
 
     - `fpm.conf` is a configuration file for PHP-FPM (FastCGI Process Manager), which is responsible for handling PHP requests on the server. It likely contains settings related to PHP-FPM's behavior, such as the number of worker processes, process priorities, and resource limits.
     ```
